@@ -17,9 +17,9 @@ $ npm i ipc2promise
 ```js
 const ipc2promise = require('ipc2promise')
 
-ipc2promise.on('download', async (args, resolve ,reject) => {
+ipc2promise.on('download', async (data, resolve ,reject) => {
     try {
-        resolve(await download(args.url))
+        resolve(await download(data.url))
     } catch (err) {
         reject(new Error(err))
     }
@@ -47,7 +47,7 @@ ipc2promise.sender('download', {url: 'https://xxxxxxxx.com/pkg.zip'})
 - `event`
   - `String` - 事件名
 - `fn`
-  - `Function(args, resolve, reject)` args: 获得的参数， resolve: 通过， reject: 拒绝
+  - `Function(data, resolve, reject)` args: 获得的数据， resolve: 通过， reject: 拒绝
 
 ### sender(event, data)
 
