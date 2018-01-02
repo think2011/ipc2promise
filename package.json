@@ -1,6 +1,6 @@
 {
   "name": "ipc2promise",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "将 electron 的 ipcMain 与 ipcRenderer 间的通信转换为 promise 模式",
   "main": "index.js",
   "scripts": {
