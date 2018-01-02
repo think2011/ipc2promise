@@ -47,9 +47,9 @@ ipc2promise.send('download', {url: 'https://xxxxxxxx.com/pkg.zip'})
 - `event`
   - `String` - 事件名
 - `fn`
-  - `Function(event, data, resolve, reject)` event: event, args: 获得的数据， resolve: 通过， reject: 拒绝
+  - `Function(event, data, resolve, reject)` event: event, data: 获得的数据， resolve: 通过， reject: 拒绝
 
-### sender(event, data)
+### send(event, data)
 
 - `event`
   - `String` - 事件名
